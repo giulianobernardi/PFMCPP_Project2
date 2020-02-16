@@ -115,50 +115,7 @@ void variableDeclarations()
     long double longDouble03 = 2147483647;            
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-    ignoreUnused(shortInt01);
-    ignoreUnused(shortInt02);
-    ignoreUnused(shortInt03);
-    ignoreUnused(uShortInt01);
-    ignoreUnused(uShortInt02);
-    ignoreUnused(uShortInt03);
-    ignoreUnused(uInt01);
-    ignoreUnused(uInt02);
-    ignoreUnused(uInt03);
-    ignoreUnused(int01);
-    ignoreUnused(int02);
-    ignoreUnused(int03);
-    ignoreUnused(longInt01);
-    ignoreUnused(longInt02);
-    ignoreUnused(longInt03);
-    ignoreUnused(uLongInt01);
-    ignoreUnused(uLongInt02);
-    ignoreUnused(uLongInt03);
-    // ignoreUnused(longLongInt01);
-    // ignoreUnused(longLongInt02);
-    // ignoreUnused(longLongInt03);
-    // ignoreUnused(uLongLongInt01);
-    // ignoreUnused(uLongLongInt02);
-    // ignoreUnused(uLongLongInt03);
-    ignoreUnused(sChar01);
-    ignoreUnused(sChar02);
-    ignoreUnused(sChar03);
-    ignoreUnused(uChar01);
-    ignoreUnused(uChar02);
-    ignoreUnused(uChar03);
-    ignoreUnused(float01);
-    ignoreUnused(float02);
-    ignoreUnused(float03);
-    ignoreUnused(double01);
-    ignoreUnused(double02);
-    ignoreUnused(double03);
-    ignoreUnused(longDouble01);
-    ignoreUnused(longDouble02);
-    ignoreUnused(longDouble03);
-    
-    
-    
-        
-
+    ignoreUnused(shortInt01, shortInt02, shortInt03, uShortInt01, uShortInt02, uShortInt03, uInt01, uInt02, uInt03, int01, int02, int03, longInt01, longInt02, longInt03, uLongInt01, uLongInt02, uLongInt03, sChar01, sChar02, sChar03, uChar01, uChar02, uChar03, float01,  float02, float03, double01, double02, double03, longDouble01, longDouble02, longDouble03);
 
 }
 /*
@@ -263,28 +220,28 @@ void stopCounting(bool stopFlag = false)
 int main()
 {
     //example of calling that function
-    rentACar(6, 2); 
+    bool rACFlag = rentACar(6, 2); 
     
     //1)
-    triangleArea(2.0f, 3.0f);
+    float currentArea = triangleArea(2.0f, 3.0f);
     
     //2)
-    minutesToHours(10);
+    float min2hour = minutesToHours(10);
     
     //3)
-    countZeros(100000.0f);
+    int numZeros = countZeros(100000.0f);
     
     //4)
-    isZero(1);
+    bool zeroTest = isZero(1);
     
     //5)
-    findMax(2, 3, 4);
+    int currMaxValue = findMax(2, 3, 4);
     
     //6)
-    measureDistance(10, 0.3f);
+    int currDist = measureDistance(10, 0.3f);
     
     //7)
-    isLargerThanZero(0.0001);
+    bool ltzFlag = isLargerThanZero(0.0001);
     
     //8)
     startCounter(1);
@@ -296,6 +253,8 @@ int main()
     playAudioForNSeconds(10);
 
     
+    ignoreUnused(rACFlag, currentArea, min2hour, numZeros, zeroTest, currMaxValue, currDist, ltzFlag);
+
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
